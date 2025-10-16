@@ -17,9 +17,7 @@ public class ReportMenu {
         String choice = "";
 
         while (!choice.equals("0")) {
-            System.out.print("------------------------------------------------------------------------------");
-            System.out.println("\n---------------------------> REPORTS MENU <-----------------------------------");
-            System.out.println("------------------------------------------------------------------------------");
+            System.out.println("\n===REPORTS MENU===");
             System.out.println("1) Month To Date");
             System.out.println("2) Previous Month");
             System.out.println("3) Year To Date");
@@ -82,9 +80,7 @@ public class ReportMenu {
     }
 
     private void customSearch() {
-        System.out.print("---------------------------------------------------------------------------------");
-        System.out.println("\n---------------------------> DETAILED SEARCH <-----------------------------------");
-        System.out.println("---------------------------------------------------------------------------------");
+        System.out.println("\n===DETAILED SEARCH===");
         System.out.println("Please enter at least one input to search: ");
         System.out.print("\"Please enter a Start date (YYYY-MM-DD): ");
         String startInput = scanner.nextLine().trim();
@@ -101,9 +97,8 @@ public class ReportMenu {
         LocalDate endDate = endInput.isEmpty() ? LocalDate.MAX : LocalDate.parse(endInput);
         Double amount = amountInput.isEmpty() ? null : Double.parseDouble(amountInput);
 
-        System.out.print("-----------------------------------------------------------------------------------------");
-        System.out.println("\n---------------------------> DETAILED SEARCH RESULTS <-----------------------------------");
-        System.out.println("-----------------------------------------------------------------------------------------");
+        System.out.println("\n===DETAILED SEARCH RESULTS===");
+
         for (Transaction t : transactions) {
             boolean matches = true;
 

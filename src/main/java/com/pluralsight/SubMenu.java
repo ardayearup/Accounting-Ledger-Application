@@ -14,9 +14,7 @@ public class SubMenu {
     public void show() {
         String choice = "";
         while (!choice.equalsIgnoreCase("H")) {
-            System.out.print("------------------------------------------------------------------------------");
-            System.out.println("\n---------------------------> LEDGER MENU <------------------------------------");
-            System.out.println("------------------------------------------------------------------------------");
+            System.out.println("\n===LEDGER MENU===");
             System.out.println("Press 'A' to display All Entries");
             System.out.println("Press 'D' to display Deposits");
             System.out.println("Press 'P' to display Payments");
@@ -47,9 +45,7 @@ public class SubMenu {
     }
 
     private void printTransactions(List<Transaction> list) {
-        System.out.print("------------------------------------------------------------------------------");
-        System.out.println("\n---------------------------> TRANSACTIONS <-----------------------------------");
-        System.out.println("------------------------------------------------------------------------------");
+        System.out.println("\n===TRANSACTIONS===");
         for (Transaction t : list) {
             System.out.println(t);
         }

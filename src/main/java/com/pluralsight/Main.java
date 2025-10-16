@@ -13,8 +13,7 @@ public class Main {
         boolean running = true;
 
         while (running) {
-            System.out.println("\n------------------------------>PENNYPILOT<-------------------------------------");
-            System.out.println("--------------->Welcome to your Personal Financial Advisor<--------------------");
+            System.out.println("===Welcome to your Personal Financial Advisor===");
             System.out.println("Please select an option: ");
             System.out.println("Press 'D' to Add Deposit");
             System.out.println("Press 'P' to Make Payment");
