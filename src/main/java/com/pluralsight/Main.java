@@ -13,6 +13,7 @@ public class Main {
         boolean running = true;
 
         while (running) {
+            System.out.println("===FundFlow===");
             System.out.println("===Welcome to your Personal Financial Advisor===");
             System.out.println("Please select an option: ");
             System.out.println("Press 'D' to Add Deposit");
@@ -39,7 +40,7 @@ public class Main {
             }
         }
 
-        System.out.println("Exiting PennyPilot. Thank you!");
+        System.out.println("Exiting FundFlow. Thank you!");
         scanner.close();
     }
 
